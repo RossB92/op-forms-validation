@@ -1,6 +1,16 @@
-function passwordCheck(inputtxt) {
-  var password1 = document.getElementsByClassName("password").innerHTML;
-  return password1;
+function passwordCheck() {
+  if (
+    document.getElementById("password").value ==
+    document.getElementById("confirm-password").value
+  ) {
+    document.getElementById("password").style.borderColor = "green";
+    document.getElementById("confirm-password").style.borderColor = "green";
+  } else {
+    document.getElementById("password").style.borderColor = "red";
+    document.getElementById("confirm-password").style.borderColor = "red";
+  }
 }
 
-console.log(password1);
+function validate() {
+  return $("#password1").val() === $("#password2").val();
+}

@@ -51,7 +51,13 @@
             <section class="third-row">
               <section class="password">
                 <label for="password">Password </label>
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  onkeyup="passwordCheck()"
+                  required
+                />
               </section>
               <section class="confirm">
                 <label for="confirm-password">Confirm Password </label>
@@ -59,13 +65,21 @@
                   type="password"
                   name="confirm-password"
                   id="confirm-password"
+                  onkeyup="passwordCheck();"
+                  required
                 />
               </section>
             </section>
             <section class="line"></section>
+            <input
+              type="submit"
+              value="Create Account"
+              class="create-account"
+              onSubmit="return validate()"
+            />
           </form>
         </div>
-        <button class="create-account">Create Account</button>
+        <!-- <button class="create-account" type="Submit">Create Account</button> -->
         <div class="log-in">
           Already have an account? <a href="url">Log in</a>
         </div>

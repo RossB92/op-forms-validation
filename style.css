@@ -82,7 +82,8 @@ input:focus {
   border: 2px royalblue solid;
   box-shadow: 2px 2px gray;
 }
-
+input:error {
+}
 .first-row,
 .second-row,
 .third-row {
@@ -116,18 +117,15 @@ input:focus {
   margin-bottom: 50px;
 }
 
-button {
+.create-account {
+  margin-top: 40px;
+  color: white;
+  background-color: #596d48;
   border-radius: 5px;
   width: 170px;
   height: 40px;
   box-shadow: none;
   border: none;
-}
-
-.create-account {
-  margin-top: 40px;
-  color: white;
-  background-color: #596d48;
 }
 .log-in {
   margin-top: 15px;
